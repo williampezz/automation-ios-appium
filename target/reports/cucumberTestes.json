@@ -1,0 +1,57 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 20142549754,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.startProject()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Login com sucesso",
+        "description": "",
+        "id": "login-de-usuario-melhoria-de-cenário-bonito;login-com-sucesso",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 1400952026,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que eu escreva as informações do usuário",
+            "match": {
+              "location": "LoginSteps.que_eu_escreva_as_informações_do_usuário()"
+            },
+            "keyword": "Dado "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Login de Usuario Melhoria de cenário bonito",
+    "description": "",
+    "id": "login-de-usuario-melhoria-de-cenário-bonito",
+    "keyword": "Funcionalidade",
+    "uri": "login.feature"
+  }
+]
