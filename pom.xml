@@ -24,11 +24,11 @@
     </dependency>
 
     <!-- Dep para rodar o appium -->
-    <dependency>
-        <groupId>io.appium</groupId>
-        <artifactId>java-client</artifactId>
-        <version>4.1.2</version>
-    </dependency>
+        <dependency>
+            <groupId>io.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>6.0.0</version>
+        </dependency>
 
     <!-- Dependencias para o appium -->
     <dependency>

@@ -13,7 +13,7 @@ formatter.feature({
   "keyword": "Funcionalidade"
 });
 formatter.before({
-  "duration": 20142549754,
+  "duration": 20821679666,
   "status": "passed"
 });
 formatter.scenario({
@@ -32,14 +32,38 @@ formatter.scenario({
 });
 formatter.step({
   "line": 7,
-  "name": "que eu escreva as informações do usuário",
+  "name": "que eu escreva as informações do usuário com \"qazando@gmail.com\"",
   "keyword": "Dado "
 });
+formatter.step({
+  "line": 8,
+  "name": "escrever os dados da senha com \"123456\"",
+  "keyword": "Quando "
+});
 formatter.match({
-  "location": "LoginSteps.que_eu_escreva_as_informações_do_usuário()"
+  "arguments": [
+    {
+      "val": "qazando@gmail.com",
+      "offset": 46
+    }
+  ],
+  "location": "LoginSteps.que_eu_escreva_as_informações_do_usuário_com(String)"
 });
 formatter.result({
-  "duration": 1400952026,
+  "duration": 4433995083,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "123456",
+      "offset": 32
+    }
+  ],
+  "location": "LoginSteps.escrever_os_dados_da_senha_com(String)"
+});
+formatter.result({
+  "duration": 1485015291,
   "status": "passed"
 });
 });

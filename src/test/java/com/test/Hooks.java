@@ -3,6 +3,7 @@ package com.test;
 import cucumber.api.java.Before;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.net.MalformedURLException;
@@ -15,10 +16,13 @@ public class Hooks {
     public static AppiumDriver<?> validateDriver() throws MalformedURLException {
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("app", "/Users/hsoares/Downloads/QazandoSeleniumJava-master/projetoYoutube/apps/app-debug.apk");
-        capabilities.setCapability("deviceName", "emulator-5554");
-        capabilities.setCapability("platformName", "Android");
-        driver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), capabilities);
+        capabilities.setCapability("app", "/Users/williampez/Documents/AutomacaoiOSAppium/appium-com-cucumber/apps/LoginExample.app");
+        capabilities.setCapability("deviceName", "iPhone 15 Pro");
+        capabilities.setCapability("platformName", "iOS");
+        capabilities.setCapability("platformVersion", "17.0");
+        capabilities.setCapability("automationName", "XCUITest");
+
+        driver = new IOSDriver<>(new URL("http://127.0.0.1:4723/"), capabilities);
         return driver;
     }
 

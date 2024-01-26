@@ -10,7 +10,15 @@ public class ScreenLogin extends BaseScreen {
     @iOSFindBy(accessibility = "login_username")
     private RemoteWebElement fieldEmail;
 
-    public void writeEmail(){
-        fieldEmail.sendKeys("qazando@gmail.com");
+    @AndroidFindBy(id = "login_password")
+    @iOSFindBy(accessibility = "login_password")
+    private RemoteWebElement fieldPass;
+
+    public void writeEmail(String email) {
+        fieldEmail.sendKeys(email);
+    }
+
+    public void writePass(String pass) {
+        fieldPass.sendKeys(pass);
     }
 }
